@@ -36,10 +36,6 @@ public class MainActivity extends AppCompatActivity {
         Intent i =new Intent(MainActivity.this,stop.class);
         startActivity(i);
     }
-    public void world(View view){
-        Intent i =new Intent(MainActivity.this,World.class);
-        startActivity(i);
-    }
     public void timer(View view){
         Intent i =new Intent(MainActivity.this,timer.class);
         startActivity(i);

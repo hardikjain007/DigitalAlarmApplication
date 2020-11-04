@@ -4,20 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="29dp"
-        android:backgroundTint="#000000"
+        app:cardBackgroundColor="#E6410C"
         app:cardCornerRadius="30px"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="298dp" >
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="298dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient">
 
             <ImageView
                 android:id="@+id/start"
@@ -26,10 +28,9 @@
                 android:src="@drawable/start1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.051" />
+                app:layout_constraintVertical_bias="0.095" />
 
             <ImageView
                 android:id="@+id/stop"
@@ -37,22 +38,11 @@
                 android:layout_height="170dp"
                 android:onClick="stop"
                 android:src="@drawable/stopwatch1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/start" />
-
-            <ImageView
-                android:id="@+id/world"
-                android:layout_width="200dp"
-                android:layout_height="170dp"
-                android:layout_marginBottom="36dp"
-                android:onClick="world"
-                android:src="@drawable/clock1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/stop"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toBottomOf="@+id/start"
+                app:layout_constraintVertical_bias="0.181" />
 
             <ImageView
                 android:id="@+id/timer"
@@ -62,10 +52,9 @@
                 android:src="@drawable/timer1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/world"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.906" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
